@@ -1,0 +1,14 @@
+{
+  "name": "mogo",
+  "version": "1.0.0",
+  "description": "Landing page for Creative templates - mogo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kowackag@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
