@@ -4,6 +4,7 @@
   "description": "Landing page for Creative templates - mogo",
   "main": "index.js",
   "scripts": {
+    "compile:sass": "node-sass styles/sass/main.scss styles/css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kowackag@gmail.com",

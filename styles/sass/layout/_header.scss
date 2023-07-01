@@ -1,0 +1,39 @@
+.header {
+  height: 1000px;
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-gradient-primary, 0.9),
+      rgba($color-gradient-secondary, 0.9)
+    ),
+    url(../../assets/images/powidoki2.jpg);
+
+  background-size: cover;
+  background-position: top;
+  color: $color-white;
+
+  &__title-box {
+    @include title-box(72px, 150px, 120px);
+    max-width: 900px;
+  }
+
+  &__title-info {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    line-height: 140px;
+  }
+
+  &__button {
+    width: 160px;
+    margin: auto;
+    padding: 10px 0;
+    border: 3px solid $color-white;
+  }
+
+  &__button-link {
+    @include link;
+    font-weight: bold;
+  }
+}

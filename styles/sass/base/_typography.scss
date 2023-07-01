@@ -1,0 +1,16 @@
+body {
+  font-family: $font-family-primary;
+  font-weight: 400;
+  color: $color-grey-dark;
+}
+
+.header {
+  &__title {
+    font-size: 150px;
+  }
+
+  &__title-info {
+    font-size: 72px;
+    // font-family: $font-family-artist;
+  }
+}

@@ -1,0 +1,50 @@
+.nav {
+  @include flex-sb-center;
+  padding: 32px;
+  line-height: 30px;
+
+  &__logo {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  &__list-box {
+    gap: 48px;
+  }
+
+  &__list {
+    position: relative;
+    gap: 56px;
+    list-style: none;
+  }
+
+  &__list-item {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-bottom: 3px solid $color-gradient-secondary;
+    }
+  }
+
+  &__list-link {
+    @include link;
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  &__icon-list {
+    list-style: none;
+    gap: 48px;
+  }
+
+  &__icon-link {
+    @include link;
+    &:active {
+      color: $color-gradient-secondary;
+    }
+  }
+}

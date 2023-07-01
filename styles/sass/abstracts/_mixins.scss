@@ -1,0 +1,24 @@
+@mixin link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white;
+}
+
+@mixin flex-sb-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin title-box($size1, $size2, $margin) {
+  margin: $margin auto;
+  p {
+    font-size: $size1;
+    font-family: $font-family-artist;
+  }
+  h1,
+  h2 {
+    font-size: $size2;
+    text-transform: uppercase;
+  }
+}
