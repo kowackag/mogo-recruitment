@@ -1,0 +1,22 @@
+.service {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 40px;
+  text-align: justify;
+
+  &__title {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 15px;
+    font-style: $font-family-secondary;
+    color: $color-grey-light;
+  }
+
+  &__icon-box {
+    font-size: 32px;
+    color: $color-green;
+  }
+}

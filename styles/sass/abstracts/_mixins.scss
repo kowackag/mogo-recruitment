@@ -4,10 +4,10 @@
   color: $color-white;
 }
 
-@mixin flex-sb-center {
+@mixin flex($jc, $ai) {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: $jc;
+  align-items: $ai;
 }
 
 @mixin title-box($size1, $size2, $margin) {

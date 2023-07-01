@@ -6,6 +6,7 @@
   box-sizing: inherit; }
 
 html {
+  width: 100vw;
   font-size: 14px; }
 
 body {
@@ -21,6 +22,16 @@ body {
   justify-content: space-between;
   align-items: center; }
 
+.icon, .icon--middle {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
+  .icon--middle {
+    vertical-align: middle; }
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -33,7 +44,7 @@ body {
   font-size: 72px; }
 
 .header {
-  height: 1000px;
+  height: 100vh;
   position: relative;
   background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(../../assets/images/powidoki2.jpg);
   background-size: cover;
@@ -63,6 +74,9 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: bold; }
+  @media screen and (min-width: 768px) {
+    .header {
+      height: 1000px; } }
 
 .page__header {
   margin: 40px auto; }
@@ -77,18 +91,29 @@ body {
 .page__title-info {
   margin-bottom: 12px; }
 
+.page__header-line {
+  width: 60px;
+  height: 3px;
+  margin: 30px auto;
+  border: none;
+  background-color: #f38181; }
+
 .page__description {
   color: #999; }
 
 .page__content {
-  display: grid; }
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 80px;
+  padding: 32px; }
 
-.page .page-header__line {
-  width: 60px;
-  height: 3px;
-  margin: 30px auto 0;
-  border: none;
-  background-color: #f38181; }
+@media screen and (min-width: 768px) {
+  .page__content {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (min-width: 1024px) {
+  .page__content {
+    grid-template-columns: repeat(3, 1fr); } }
 
 .nav {
   display: flex;
@@ -125,6 +150,24 @@ body {
   .nav__icon-link {
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    font-size: 20px;
+    vertical-align: middle; }
     .nav__icon-link:active {
       color: #fce38a; }
+
+.service {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 40px;
+  text-align: justify; }
+  .service__title {
+    margin-bottom: 16px;
+    text-transform: uppercase; }
+  .service__description {
+    font-size: 15px;
+    font-style: "Roboto", sans-serif;
+    color: #999; }
+  .service__icon-box {
+    font-size: 32px;
+    color: #95e1d3; }

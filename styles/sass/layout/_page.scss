@@ -2,8 +2,17 @@
   &__header {
     @include title-box(24px, 30px, 40px);
   }
+
   &__title-info {
     margin-bottom: 12px;
+  }
+
+  &__header-line {
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+    border: none;
+    background-color: $color-gradient-primary;
   }
 
   &__description {
@@ -12,14 +21,20 @@
 
   &__content {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: 80px;
+    padding: 32px;
   }
-  & .page-header {
-    &__line {
-      width: 60px;
-      height: 3px;
-      margin: 30px auto 0;
-      border: none;
-      background-color: $color-gradient-primary;
+
+  @media screen and (min-width: 768px) {
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &__content {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

@@ -1,5 +1,6 @@
 .nav {
-  @include flex-sb-center;
+  @include flex(space-between, center);
+
   padding: 32px;
   line-height: 30px;
 
@@ -43,6 +44,8 @@
 
   &__icon-link {
     @include link;
+    font-size: 20px;
+    vertical-align: middle;
     &:active {
       color: $color-gradient-secondary;
     }
