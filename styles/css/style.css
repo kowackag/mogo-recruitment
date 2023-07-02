@@ -126,7 +126,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   font-family: "Roboto", sans-serif;
-  color: #888; }
+  color: #999; }
 
 .page__content, .page__content--team {
   display: grid;
@@ -308,7 +308,7 @@ body {
     font-size: 15px;
     line-height: 24px;
     font-family: "Roboto", sans-serif;
-    color: #888; }
+    color: #999; }
   .service__icon-box {
     font-size: 32px;
     color: #95e1d3; }
@@ -357,7 +357,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
-  color: #888; }
+  color: #999; }
 
 .team-member__figurcaption {
   margin: 24px; }
