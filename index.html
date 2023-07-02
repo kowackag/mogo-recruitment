@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="./styles/css/style.css" type="text/css">
     <title>Creative Template - MOGO</title>
 </head>
-<!-- nav__list--mobile -->
 
 <body>
+    <!-- ----------HEADER----------- -->
+
     <header class="header">
         <div class="content-container">
             <nav class="header__nav nav">
@@ -75,8 +76,14 @@
             </div>
         </div>
     </header>
+
+    <!-- ----------MAIN----------- -->
+
     <main class="main">
         <div class="content-container" id="service">
+
+            <!-- ----------SERVICE----------- -->
+
             <article class="page">
                 <header class="page__header">
                     <p class="page__title-info">We work with</p>
@@ -84,70 +91,84 @@
                     <hr class="page__header-line">
                 </header>
                 <section class="page__content">
-                    <article class="service">
-                        <div class="service__icon-box"><svg class="icon icon-alarm">
+                    <li class="service">
+                        <div class="service__icon-box">
+                            <svg class="icon icon-alarm">
                                 <use xlink:href="./assets/icons/clock.svg#icon-alarm"></use>
-                            </svg></div>
+                            </svg>
+                        </div>
                         <div>
                             <h3 class="service__title">Photography</h3>
                             <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Numquam sit architecto culpa!Totam, mollitia?</p>
                         </div>
-                    </article>
-                    <article class="service">
-                        <div class="service__icon-box"><svg class="icon icon-image">
+                    </li>
+                    <li class="service">
+                        <div class="service__icon-box">
+                            <svg class="icon icon-image">
                                 <use xlink:href="/assets/icons/image.svg#icon-image"></use>
-                            </svg></div>
+                            </svg>
+                        </div>
                         <div>
                             <div>
                                 <h3 class="service__title">Web design</h3>
                                 <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Totam, mollitia?</p>
                             </div>
-                    </article>
-                    <article class="service">
-                        <div class="service__icon-box"> <svg class="icon icon-display">
+                    </li>
+                    <li class="service">
+                        <div class="service__icon-box">
+                            <svg class="icon icon-display">
                                 <use xlink:href="/assets/icons/display.svg#icon-display"></use>
-                            </svg></div>
+                            </svg>
+                        </div>
                         <div>
-
                             <h3 class="service__title">Creativity</h3>
                             <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Totam, mollitia?</p>
                         </div>
-                    </article>
-                    <article class="service">
-                        <div class="service__icon-box"><svg class="icon icon-library">
+                    </li>
+                    <li class="service">
+                        <div class="service__icon-box">
+                            <svg class="icon icon-library">
                                 <use xlink:href="./assets/icons/library.svg#icon-library"></use>
-                            </svg></div>
+                            </svg>
+                        </div>
                         <div>
                             <h3 class="service__title">SEO</h3>
                             <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
                         </div>
-                    </article>
-                    <article class="service">
-                        <div class="service__icon-box"><svg class="icon icon-home">
+                    </li>
+                    <li class="service">
+                        <div class="service__icon-box">
+                            <svg class="icon icon-home">
                                 <use xlink:href="./assets/icons/home.svg#icon-home"></use>
-                            </svg></div>
+                            </svg>
+                        </div>
                         <div>
                             <h3 class="service__title">CSS/HTML</h3>
                             <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Totam, mollitia?</p>
                         </div>
-                    </article>
-                    <article class="service">
-                        <div class="service__icon-box"><svg class="icon icon-enlarge">
+                    </li>
+                    <li class="service">
+                        <div class="service__icon-box">
+                            <svg class="icon icon-enlarge">
                                 <use xlink:href="./assets/icons/digit.svg#icon-enlarge"></use>
-                            </svg></div>
+                            </svg>
+                        </div>
                         <div>
                             <h3 class="service__title">Digital</h3>
                             <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Totam, mollitia?</p>
                         </div>
-                    </article>
+                    </li>
                 </section>
             </article>
+
+            <!-- ----------TEAM----------- -->
+
             <article class="page" id="team">
                 <header class="page__header">
                     <p class="page__title-info">We work with</p>
@@ -158,45 +179,51 @@
                     nisi, non, similique
                     dignissimos at quaerat omnis suscipit officiis reiciendis velit aut libero eligendi temporibus
                     voluptas sit consequuntur neque, a tempora!</p>
+
                 <section class="page__content--team">
                     <div class="team-member">
                         <figure class="team-member__figure">
                             <div class="team-member__background">
                                 <div class="team-member__img-box">
-                                    <img class="team-member__img" srcset="./assets/images/matth@2x.jpg 768w"
+                                    <img class="team-member__img" srcset="./assets/images/matth@2x.jpg 2x"
                                         src="./assets/images/matth.jpg"
                                         alt="Portrait of Matthew Dic wearing red black plaid shirt" loading="lazy">
                                     <div class="team-member__social-media social-media">
                                         <ul class="social-media__list">
-                                            <li class="social-media__list-item"><a
-                                                    href="https://www.facebook.com/matthew.dix.393/"
-                                                    class="social-media__link" aria-label="Facebook icon"><svg
-                                                        class="icon icon-facebook">
+                                            <li class="social-media__list-item">
+                                                <a href="https://www.facebook.com/matthew.dix.393/"
+                                                    class="social-media__link" aria-label="Facebook icon">
+                                                    <svg class="icon icon-facebook">
                                                         <use xlink:href="./assets/icons/facebook.svg#icon-facebook">
                                                         </use>
-                                                    </svg></a>
+                                                    </svg>
+                                                </a>
                                             </li>
-                                            <li class="social-media__list-item"><a href="https://twitter.com/Mattdix_"
-                                                    class="social-media__link" aria-label="Twitter icon"><svg
-                                                        class="icon icon-twitter">
+                                            <li class="social-media__list-item">
+                                                <a href="https://twitter.com/Mattdix_" class="social-media__link"
+                                                    aria-label="Twitter icon">
+                                                    <svg class="icon icon-twitter">
                                                         <use xlink:href="./assets/icons/twitter.svg#icon-twitter"></use>
                                                     </svg>
-                                                    </svg></a>
+                                                </a>
                                             </li>
-                                            <li class="social-media__list-item"><a
-                                                    href="https://za.pinterest.com/Studi056/" class="social-media__link"
-                                                    aria-label="Pinterest icon"><svg class="icon icon-pinterest">
+                                            <li class="social-media__list-item">
+                                                <a href="https://za.pinterest.com/Studi056/" class="social-media__link"
+                                                    aria-label="Pinterest icon">
+                                                    <svg class="icon icon-pinterest">
                                                         <use xlink:href="./assets/icons/pinterest.svg#icon-pinterest">
                                                         </use>
-                                                    </svg></a>
+                                                    </svg>
+                                                </a>
                                             </li>
-                                            <li class="social-media__list-item"><a
-                                                    href="https://www.instagram.com/offtrackoutlet/"
-                                                    class="social-media__link" aria-label="Instagram icon"><svg
-                                                        class="icon icon-instagram">
+                                            <li class="social-media__list-item">
+                                                <a href="https://www.instagram.com/offtrackoutlet/"
+                                                    class="social-media__link" aria-label="Instagram icon">
+                                                    <svg class="icon icon-instagram">
                                                         <use xlink:href="./assets/icons/instagram.svg#icon-instagram">
                                                         </use>
-                                                    </svg></a>
+                                                    </svg>
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -208,43 +235,47 @@
                             </figcaption>
                         </figure>
                     </div>
+
                     <div class="team-member">
                         <figure class="team-member__figure">
 
                             <div class="team-member__background">
                                 <div class="team-member__img-box">
-                                    <img class="team-member__img" srcset="./assets/images/chris@2x.jpg 768w"
+                                    <img class="team-member__img" srcset="./assets/images/chris@2x.jpg 2x"
                                         src="./assets/images/chris.jpg"
                                         alt="Portrait of Matthew Dic wearing red black plaid shirt" loading="lazy">
                                     <div class="team-member__social-media social-media">
                                         <ul class="social-media__list">
-                                            <li class="social-media__list-item"><a href="#team"
-                                                    class="social-media__link" aria-label="Facebook icon"><svg
-                                                        class="icon icon-facebook">
+                                            <li class="social-media__list-item">
+                                                <a href="#team" class="social-media__link" aria-label="Facebook icon">
+                                                    <svg class="icon icon-facebook">
                                                         <use xlink:href="./assets/icons/facebook.svg#icon-facebook">
                                                         </use>
-                                                    </svg></a>
+                                                    </svg>
+                                                </a>
                                             </li>
-                                            <li class="social-media__list-item"><a href="#team"
-                                                    class="social-media__link" aria-label="Twitter icon"><svg
-                                                        class="icon icon-twitter">
+                                            <li class="social-media__list-item">
+                                                <a href="#team" class="social-media__link" aria-label="Twitter icon">
+                                                    <svg class="icon icon-twitter">
                                                         <use xlink:href="./assets/icons/twitter.svg#icon-twitter"></use>
                                                     </svg>
-                                                    </svg></a>
+                                                </a>
                                             </li>
-                                            <li class="social-media__list-item"><a href="#team"
-                                                    class="social-media__link" aria-label="Pinterest icon"><svg
-                                                        class="icon icon-pinterest">
+                                            <li class="social-media__list-item">
+                                                <a href="#team" class="social-media__link" aria-label="Pinterest icon">
+                                                    <svg class="icon icon-pinterest">
                                                         <use xlink:href="./assets/icons/pinterest.svg#icon-pinterest">
                                                         </use>
-                                                    </svg></a>
+                                                    </svg>
+                                                </a>
                                             </li>
-                                            <li class="social-media__list-item"><a href="#team"
-                                                    class="social-media__link" aria-label="Instagram icon"><svg
-                                                        class="icon icon-instagram">
+                                            <li class="social-media__list-item">
+                                                <a href="#team" class="social-media__link" aria-label="Instagram icon">
+                                                    <svg class="icon icon-instagram">
                                                         <use xlink:href="./assets/icons/instagram.svg#icon-instagram">
                                                         </use>
-                                                    </svg></a>
+                                                    </svg>
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -256,6 +287,7 @@
                             </figcaption>
                         </figure>
                     </div>
+
                     <div class="team-member">
                         <figure class="team-member__figure">
 
@@ -266,33 +298,36 @@
                                         alt="Portrait of Matthew Dic wearing red black plaid shirt" loading="lazy">
                                     <div class="team-member__social-media social-media">
                                         <ul class="social-media__list">
-                                            <li class="social-media__list-item"><a href="#team"
-                                                    class="social-media__link" aria-label="Facebook icon"><svg
-                                                        class="icon icon-facebook">
+                                            <li class="social-media__list-item">
+                                                <a href="#team" class="social-media__link" aria-label="Facebook icon">
+                                                    <svg class="icon icon-facebook">
                                                         <use xlink:href="./assets/icons/facebook.svg#icon-facebook">
                                                         </use>
-                                                    </svg></a>
+                                                    </svg>
+                                                </a>
                                             </li>
-                                            <li class="social-media__list-item"><a href="#team"
-                                                    class="social-media__link" aria-label="Twitter icon"><svg
-                                                        class="icon icon-twitter">
+                                            <li class="social-media__list-item">
+                                                <a href="#team" class="social-media__link" aria-label="Twitter icon">
+                                                    <svg class="icon icon-twitter">
                                                         <use xlink:href="./assets/icons/twitter.svg#icon-twitter"></use>
                                                     </svg>
-                                                    </svg></a>
+                                                </a>
                                             </li>
-                                            <li class="social-media__list-item"><a href="#team"
-                                                    class="social-media__link" aria-label="Pinterest icon"><svg
-                                                        class="icon icon-pinterest">
+                                            <li class="social-media__list-item">
+                                                <a href="#team" class="social-media__link" aria-label="Pinterest icon">
+                                                    <svg class="icon icon-pinterest">
                                                         <use xlink:href="./assets/icons/pinterest.svg#icon-pinterest">
                                                         </use>
-                                                    </svg></a>
+                                                    </svg>
+                                                </a>
                                             </li>
-                                            <li class="social-media__list-item"><a href="#team"
-                                                    class="social-media__link" aria-label="Instagram icon"><svg
-                                                        class="icon icon-instagram">
+                                            <li class="social-media__list-item">
+                                                <a href="#team" class="social-media__link" aria-label="Instagram icon">
+                                                    <svg class="icon icon-instagram">
                                                         <use xlink:href="./assets/icons/instagram.svg#icon-instagram">
                                                         </use>
-                                                    </svg></a>
+                                                    </svg>
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -307,11 +342,11 @@
 
                 </section>
             </article>
-            <article>
-
-            </article>
         </div>
     </main>
+
+    <!-- ----------FOOTER----------- -->
+
     <div class="content-container">
         <footer class="footer">
             <p class="footer__copyright">&copy; 2016 MoGo free PSD template. Coded by <a

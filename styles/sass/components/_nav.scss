@@ -1,6 +1,5 @@
 .nav {
   @include flex(space-between, center);
-
   padding: 32px 20px;
 
   &__logo {
@@ -82,6 +81,7 @@
 
   &__icon-menu {
     z-index: 100;
+    
     @media screen and (min-width: 1024px) {
       display: none;
     }

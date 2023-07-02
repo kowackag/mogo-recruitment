@@ -13,6 +13,11 @@
   background-position: top;
   color: $color-white;
 
+  @media screen and (min-width: 768px) {
+    height: 1000px;
+    max-height: none;
+  }
+  
   &__title-box {
     @include title-box(42px, 66px, 86px);
     max-width: 400px;
@@ -47,10 +52,5 @@
   &__button-link {
     @include link($color-white);
     font-weight: bold;
-  }
-
-  @media screen and (min-width: 768px) {
-    height: 1000px;
-    max-height: none;
   }
 }
