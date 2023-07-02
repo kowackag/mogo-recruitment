@@ -1,7 +1,7 @@
-@mixin link {
+@mixin link($col) {
   text-transform: uppercase;
   text-decoration: none;
-  color: $color-white;
+  color: $col;
 }
 
 @mixin flex($jc, $ai) {
@@ -19,6 +19,17 @@
   h1,
   h2 {
     font-size: $size2;
+    font-weight: 600;
     text-transform: uppercase;
   }
+}
+
+@mixin pseudo {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

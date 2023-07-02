@@ -4,7 +4,7 @@
   }
 
   &__title-info {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
 
   &__header-line {
@@ -16,6 +16,10 @@
   }
 
   &__description {
+    margin: 30px;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: $font-family-secondary;
     color: $color-grey-light;
   }
 
@@ -23,12 +27,22 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 80px;
-    padding: 32px;
+    margin: 0 20px;
+    padding: 32px 0;
+
+    &--team {
+      @extend .page__content;
+      gap: 24px;
+    }
   }
 
   @media screen and (min-width: 768px) {
     &__content {
       grid-template-columns: repeat(2, 1fr);
+
+      &--team {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
   }
 

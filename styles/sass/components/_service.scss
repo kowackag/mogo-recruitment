@@ -2,16 +2,19 @@
   display: grid;
   grid-template-columns: 36px 1fr;
   gap: 40px;
-  text-align: justify;
+  text-align: start;
 
   &__title {
     margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 600;
     text-transform: uppercase;
   }
 
   &__description {
     font-size: 15px;
-    font-style: $font-family-secondary;
+    line-height: 24px;
+    font-family: $font-family-secondary;
     color: $color-grey-light;
   }
 

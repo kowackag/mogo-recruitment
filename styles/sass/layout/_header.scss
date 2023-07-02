@@ -1,20 +1,30 @@
 .header {
   height: 100vh;
+  max-height: 800px;
   position: relative;
   background-image: linear-gradient(
       to bottom,
       rgba($color-gradient-primary, 0.9),
       rgba($color-gradient-secondary, 0.9)
     ),
-    url(../../assets/images/powidoki2.jpg);
+    url(../../assets/images/eagle.jpg);
 
   background-size: cover;
   background-position: top;
   color: $color-white;
 
   &__title-box {
-    @include title-box(72px, 150px, 120px);
-    max-width: 900px;
+    @include title-box(42px, 66px, 86px);
+    max-width: 400px;
+
+    @media screen and (min-width: 768px) {
+      @include title-box(56px, 120px, 120px);
+      max-width: 700px;
+    }
+    @media screen and (min-width: 1024px) {
+      @include title-box(72px, 150px, 120px);
+      max-width: 900px;
+    }
   }
 
   &__title-info {
@@ -22,7 +32,9 @@
   }
 
   &__title {
-    line-height: 140px;
+    @media screen and (min-width: 768px) {
+      line-height: 140px;
+    }
   }
 
   &__button {
@@ -33,11 +45,12 @@
   }
 
   &__button-link {
-    @include link;
+    @include link($color-white);
     font-weight: bold;
   }
 
   @media screen and (min-width: 768px) {
     height: 1000px;
+    max-height: none;
   }
 }

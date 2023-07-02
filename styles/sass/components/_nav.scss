@@ -1,15 +1,20 @@
 .nav {
   @include flex(space-between, center);
 
-  padding: 32px;
-  line-height: 30px;
+  padding: 32px 20px;
 
   &__logo {
     font-size: 30px;
     font-weight: bold;
+
+    &--link {
+      @include link($color-white);
+      text-transform: none;
+    }
   }
 
   &__list-box {
+    @include flex(space-between, center);
     gap: 48px;
   }
 
@@ -17,37 +22,86 @@
     position: relative;
     gap: 56px;
     list-style: none;
-  }
+    display: none;
 
-  &__list-item {
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      border-bottom: 3px solid $color-gradient-secondary;
+    @media screen and (min-width: 1024px) {
+      display: flex;
     }
   }
 
+  &__list-mobile {
+    position: fixed;
+    gap: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    text-align: center;
+    background-color: $color-white;
+    overflow-x: hidden;
+    z-index: 1;
+  }
+
+  &__list-mobile-link {
+    @include link($color-grey-dark);
+    font-size: 40px;
+    line-height: 200%;
+  }
+
   &__list-link {
-    @include link;
+    @include link($color-white);
     position: relative;
+    display: flex;
     text-transform: uppercase;
+    transition: all 0.35s ease-out;
+
+    &:hover,
+    &:active {
+      color: $color-gradient-secondary;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &::before {
+      @include pseudo;
+      bottom: -8px;
+      border-bottom: 2px solid $color-gradient-secondary;
+      opacity: 0;
+      transition: all 0.35s ease-out;
+    }
   }
 
   &__icon-list {
+    @include flex(space-between, center);
     list-style: none;
     gap: 48px;
   }
 
+  &__icon-menu {
+    z-index: 100;
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+
   &__icon-link {
-    @include link;
+    @include link($color-white);
     font-size: 20px;
     vertical-align: middle;
+
+    &:hover,
     &:active {
       color: $color-gradient-secondary;
+    }
+
+    &--close {
+      color: $color-grey-dark;
+      &:active {
+        color: $color-gradient-primary;
+      }
     }
   }
 }
