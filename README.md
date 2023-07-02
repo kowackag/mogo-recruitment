@@ -1,4 +1,4 @@
-![top](./public/top.jpg)
+![top](./assets/images/mogo.jpg)
 
 # MoGo template
 
@@ -8,7 +8,6 @@
 
 [⭐ Overview](#⭐-overview)
 
-- [The challenge](#the-challenge)
 - [Links](#links)
 - [Screenshot](#screenshot)
 
@@ -28,11 +27,6 @@
 
 &nbsp;
 
-### **The challenge:**
-
-The challenge was to prepare application to manage the excursions.
-The application consists of two parts with separate panels dedicated to:
-
 ### **Links:**
 
 - [GitHub](https://github.com/kowackag/Excursion-Form.git);
@@ -41,12 +35,13 @@ The application consists of two parts with separate panels dedicated to:
 ### **Screenshot:**
 
 &nbsp;
+Desktop:
 
-![Client panel](./public/screen1.JPG)
+![Desktop](./assets/images/desktopMogo.jpg)
 
-Admin panel:
+Mobile:
 
-![Admin panel](./public/screen2.JPG)
+![mobile](./assets/images/mobileMogo.jpg)
 
 ## 💡 My process
 
@@ -55,19 +50,7 @@ Admin panel:
 ### **Technologies:**
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-
-&nbsp;
-
-### **Solutions provided in the project:**
-
-- HTML:
-  - The project was built using semantic HTML5 markup.
-- CSS:
-  - The css styles (`client.css` and` admin.css`) are loaded into `<head>` section thanks to `webpack`, using the appropriate loader in `webpack.config.js` for files with the extension` .css`.
-  - The form was made using CSS Grid layout.
-  - It was prepared with Mobile-first approach.
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
 &nbsp;
 
