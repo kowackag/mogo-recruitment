@@ -46,6 +46,16 @@
     @include link($color-grey-dark);
     font-size: 40px;
     line-height: 200%;
+    transition: all 0.35s ease-out;
+
+    &:hover,
+    &:active {
+      color: $color-gradient-primary;
+
+      &::before {
+        opacity: 1;
+      }
+    }
   }
 
   &__list-link {
@@ -58,10 +68,6 @@
     &:hover,
     &:active {
       color: $color-gradient-secondary;
-
-      &::before {
-        opacity: 1;
-      }
     }
 
     &::before {
@@ -81,7 +87,7 @@
 
   &__icon-menu {
     z-index: 100;
-    
+
     @media screen and (min-width: 1024px) {
       display: none;
     }
@@ -91,7 +97,8 @@
     @include link($color-white);
     font-size: 20px;
     vertical-align: middle;
-
+    transition: all 0.35s ease-out;
+    
     &:hover,
     &:active {
       color: $color-gradient-secondary;
@@ -99,7 +106,9 @@
 
     &--close {
       color: $color-grey-dark;
-      &:active {
+      transition: all 0.35s ease-out;
+      &:active,
+      &:hover {
         color: $color-gradient-primary;
       }
     }

@@ -1,13 +1,3 @@
-const subscribeBtn = document.querySelector("#subscribe");
-// const emailfield = document.querySelector(".footer__form-field");
-
-const subscribe = (e) => {
-  e.preventDefault();
-  // console.log(e.target.value);
-  //  emailfield.textContent = "";
-};
-subscribeBtn.addEventListener("click", subscribe);
-
 // ---------UNFOLD MENU -------------
 
 const menuBox = document.querySelector(".nav__icon-menu");
