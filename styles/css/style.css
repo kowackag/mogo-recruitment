@@ -90,15 +90,36 @@ body {
     .header__title {
       line-height: 140px; } }
   .header__button {
+    position: relative;
     width: 160px;
     margin: auto;
-    padding: 10px 0;
     border: 3px solid #fff; }
   .header__button-link {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+    line-height: 38px;
     font-weight: bold; }
+    .header__button-link:hover {
+      opacity: 0.9; }
+      .header__button-link:hover::before {
+        opacity: 0.9; }
+    .header__button-link::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: "learn more";
+      background-color: #fff;
+      line-height: 38px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #f38181;
+      opacity: 0;
+      transition: all 0.35s ease-out; }
 
 .page__header {
   margin: 40px auto; }
