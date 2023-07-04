@@ -282,6 +282,8 @@ body {
     transition: all 0.35s ease-out; }
     .nav__list-link:hover, .nav__list-link:active {
       color: #fce38a; }
+      .nav__list-link:hover::before, .nav__list-link:active::before {
+        opacity: 1; }
     .nav__list-link::before {
       display: block;
       content: "";
@@ -294,6 +296,8 @@ body {
       border-bottom: 2px solid #fce38a;
       opacity: 0;
       transition: all 0.35s ease-out; }
+      .nav__list-link::before:hover {
+        opacity: 1; }
   .nav__icon-list {
     display: flex;
     justify-content: space-between;

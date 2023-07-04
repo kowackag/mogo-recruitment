@@ -68,6 +68,9 @@
     &:hover,
     &:active {
       color: $color-gradient-secondary;
+      &::before {
+        opacity: 1;
+      }
     }
 
     &::before {
@@ -98,7 +101,7 @@
     font-size: 20px;
     vertical-align: middle;
     transition: all 0.35s ease-out;
-    
+
     &:hover,
     &:active {
       color: $color-gradient-secondary;
